@@ -1,5 +1,5 @@
 const mapboxgl = require("mapbox-gl");
-
+const {buildMarker} = require("./marker.js");
 mapboxgl.accessToken = 'pk.eyJ1IjoiY2F0bmNyYWRsZSIsImEiOiJjamdzNDU3NTgwZGNwMzJwOWhmdTdnbWZoIn0.-6JZG5K23x8sf_FgXUTuOg';
 
 const map = new mapboxgl.Map({
@@ -10,4 +10,13 @@ const map = new mapboxgl.Map({
 });
 
 
+
+
+
+
+
 console.log("Hello from JS")
+const marker = buildMarker("hotel", [-74.009151, 40.705086]); // or [-87.6354, 41.8885]
+marker.addTo(map);
+
+
