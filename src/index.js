@@ -1,6 +1,6 @@
 const mapboxgl = require("mapbox-gl");
 
-mapboxgl.accessToken = "YOUR API TOKEN HERE";
+mapboxgl.accessToken = 'pk.eyJ1IjoiY2F0bmNyYWRsZSIsImEiOiJjamdzNDU3NTgwZGNwMzJwOWhmdTdnbWZoIn0.-6JZG5K23x8sf_FgXUTuOg';
 
 const map = new mapboxgl.Map({
   container: "map",
@@ -10,4 +10,4 @@ const map = new mapboxgl.Map({
 });
 
 
-onsole.log("Hello from JS")
+console.log("Hello from JS")
